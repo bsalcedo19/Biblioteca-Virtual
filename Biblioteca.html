@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Comunitaria Virtual</title>
+
+    <style>
+        .portada img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+
+header {
+    background-color: #243b2a;
+    color: white;
+}
+
+.navbar {
+    max-width: 1100px;
+    margin: auto;
+    padding: 18px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h1 {
+    font-size: 22px;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #f4c95d;
+}
+
+.inicio {
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    padding: 50px 10%;
+    background:
+        linear-gradient(
+            rgba(36, 59, 42, .85),
+            rgba(36, 59, 42, .85)
+        );
+}
+
+.inicio-texto {
+    max-width: 600px;
+    color: white;
+}
+
+.inicio h2 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.inicio p {
+    font-size: 19px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.boton {
+    display: inline-block;
+    background-color: #f4c95d;
+    color: #243b2a;
+    padding: 13px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.boton:hover {
+    background-color: #e8b83e;
+}
+
+.libros {
+    max-width: 1100px;
+    margin: auto;
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.libros h2 {
+    font-size: 32px;
+    color: #243b2a;
+}
+
+.descripcion {
+    margin: 10px 0 25px;
+}
+
+.catalogo {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+.libro {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,.1);
+    transition: .3s;
+}
+
+.libro:hover {
+    transform: translateY(-8px);
+}
+
+.portada {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee5d2;
+    border-radius: 8px;
+    font-size: 70px;
+    margin-bottom: 15px;
+}
+
+.libro h3 {
+    color: #243b2a;
+    margin-bottom: 10px;
+}
+
+.libro p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.libro button {
+    border: none;
+    background-color: #243b2a;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.libro button:hover {
+    background-color: #35583e;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+.button-info {
+    margin-top: auto;
+}
+.nosotros {
+    background-color: #e8e2d5;
+
+    padding: 70px 20px;
+
+    text-align: center;
+}
+
+.nosotros h2 {
+    color: #243b2a;
+    margin-bottom: 20px;
+}
+
+.nosotros p {
+    max-width: 700px;
+    margin: auto;
+
+    line-height: 1.7;
+}
+
+.contacto {
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.contacto h2 {
+    color: #243b2a;
+    margin-bottom: 20px;
+}
+
+.contacto p {
+    margin: 8px;
+}
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+
+            <h1>Biblioteca Comunitaria Virtual</h1>
+
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#libros">Libros</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <main>
+        <section id="inicio" class="inicio">
+
+            <div class="inicio-texto">
+
+                <h2>Un libro puede abrir un mundo entero</h2>
+
+                <p>
+                    Bienvenido a nuestra Biblioteca Comunitaria Virtual.
+                    Encuentra libros, descubre nuevas historias
+                    y disfruta del conocimiento.
+                </p>
+
+                <a href="https://docs.google.com/spreadsheets/d/1rrON9-XJodjwyi8TxABo80u5oPrLsPl2ZEnGu1G22-g/edit?usp=sharing" class="boton">
+                    Ver más libros
+                </a>
+
+            </div>
+
+        </section>
+
+        <section id="libros" class="libros">
+
+            <div class="catalogo">
+
+                <article class="libro">
+
+                    <div class="portada">
+                       <a href="https://dn720004.ca.archive.org/0/items/libros-celebres/LA%20VUELTA%20AL%20MUNDO_text.pdf"> <img src="https://librosccs.com/cdn/shop/files/libro-la-vuelta-al-mundo-en-80-dias-julio-verne.jpg?v=1701738985&width=1445" alt="Portada de La vuelta al mundo en 80 días"></a>
+                    </div>
+
+                    
+                       <a href="https://es.wikipedia.org/wiki/Julio_Verne" class="boton"><strong>Ver Información</strong></a>
+                    </button>
+
+                </article>
+
+
+                <article class="libro">
+
+                    <div class="portada">
+                       <a href="https://el-libros.com/wp-content/uploads/2022/09/EL-PRINCIPITO.pdf" target="_blank"> <img src="https://i.pinimg.com/originals/44/49/fa/4449fa8105c957a2cea0f41fd3b60d5c.jpg" alt="Portada de El Principito"></a>
+                    </div>
+                       <a href="https://es.wikipedia.org/wiki/Antoine_de_Saint-Exupéry" class="boton"><strong>Ver Información</strong></a>
+                    </button>
+
+                </article>
+
+                      
+                    </button>
+
+                </article>
+
+
+                <article class="libro">
+
+                    <div class="portada">
+                       <a href="https://drive.google.com/file/d/0B2V3UrRIXRl1STVZSVdNaDdwcXM/preview?resourcekey=0-hit5mdikVnuz7pn5MsZ2wQ" target="_blank"> <img src="https://ellector.com.pa/cdn/shop/files/cien-anos-de-soledad.webp?v=1731690530&width=1100" alt="Portada de Cien años de soledad"></a>
+                    </div>
+
+                       <a href="https://es.wikipedia.org/wiki/Gabriel_García_Márquez" class="boton"><strong>Ver Información</strong></a>
+                    </button>
+
+                </article>
+
+
+                <article class="libro">
+
+                    <div class="portada">
+                       <a href="https://www.bing.com/images/search?view=detailV2&ccid=0tw8TBf0&id=CAACD7F33C0B10F2637EEA0C8D023343D87862F3&thid=OIP.0tw8TBf09ucrievH0XctrwHaK7&mediaurl=https%3a%2f%2fwww.loqueleo.com%2fmx%2fuploads%2f2017%2f02%2flagrimas-de-angeles.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.d2dc3c4c17f4f6e72b89ebc7d1772daf%3frik%3d82J42EMzAo0M6g%26pid%3dImgRaw%26r%3d0&exph=1180&expw=800&q=l%c3%a1grimas+de+%c3%a1ngeles+pdf&FORM=IRPRST&ck=4F86BB4948FEFE6C9F16F7722324625A&selectedIndex=2&itb=0" target="_blank"> <img src="https://th.bing.com/th/id/OIP.0tw8TBf09ucrievH0XctrwHaK7?w=184&h=272&c=7&r=0&o=7&pid=1.7&rm=3"></a>
+                    </div>
+
+                       <a href="https://es.wikipedia.org/wiki/Homero" class="boton"><strong>Ver Información</strong></a>
+                    </button>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <section id="nosotros" class="nosotros">
+
+            <h2>Sobre nuestra biblioteca</h2>
+
+            <p>
+                Nuestra biblioteca comunitaria busca facilitar
+                el acceso a la lectura y al conocimiento para
+                todos los miembros de la comunidad.
+            </p>
+
+        </section>
+
+        <section id="contacto" class="contacto">
+
+            <h2>📞 Contáctanos</h2>
+
+            <p>📍 Santo Domingo, República Dominicana</p>
+
+            <p>📧 bibliotecacomunitaria@gmail.com</p>
+
+            <p>📱 (809) 037-2863</p>
+
+        </section>
+
+    </main>
+</body>
+</html>
